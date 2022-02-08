@@ -1,0 +1,780 @@
+Processing by AuthController#refresh_token as JS
+Completed 200 OK in 1ms (Views: 0.2ms)
+Processing by AuthController#refresh_token as JS
+  Rendering errors/error.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered errors/error.html.slim within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 401 Unauthorized in 207ms (Views: 206.4ms)
+Processing by AuthController#refresh_token as JS
+  Rendering errors/error.html.slim within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered errors/error.html.slim within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 401 Unauthorized in 3ms (Views: 2.3ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+  Rendered refill/_nurse_message.text.slim (12.9ms)
+Completed 201 Created in 96ms (Views: 0.3ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.4ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+  Rendered refill/_nurse_message.text.slim (0.0ms)
+Completed 500 Internal Server Error in 2ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"1", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>"65201"}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>""}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms)
+Processing by RefillController#create as JSON
+  Parameters: {"refill"=>{"address"=>{"city"=>"Columbia", "country"=>"", "state"=>"MO", "streetAddress1"=>"27 N 10th Street", "streetAddress2"=>"", "zipcode"=>""}, "deliveryMethod"=>"pickup", "patientIndex"=>"0", "paymentMethod"=>"Insurance", "recentVisit"=>"true"}}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:12 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (3.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /portal-allergy_vials/public/packs-test
+Completed 200 OK in 27543ms (Views: 27163.1ms)
+Started GET "/403" for 172.26.0.5 at 2021-01-28 20:35:41 +0000
+Processing by ApplicationController#render_forbidden as HTML
+Redirected to http://tide.test:3000/401
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+Started GET "/401" for 172.26.0.5 at 2021-01-28 20:35:41 +0000
+Processing by ApplicationController#render_unauthorized as HTML
+  Rendering errors/error.html.slim within layouts/application
+  Rendered errors/error.html.slim within layouts/application (3.7ms)
+Completed 401 Unauthorized in 745ms (Views: 744.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:42 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.2ms)
+Completed 200 OK in 773ms (Views: 770.4ms)
+Started GET "/404?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:44 +0000
+Processing by ApplicationController#render_not_found as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering errors/error.html.slim within layouts/application
+  Rendered errors/error.html.slim within layouts/application (0.7ms)
+Completed 404 Not Found in 745ms (Views: 742.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:46 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.6ms)
+Completed 200 OK in 752ms (Views: 748.6ms)
+Started GET "/500?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:47 +0000
+Processing by ApplicationController#render_internal_server_error as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering errors/error.html.slim within layouts/application
+  Rendered errors/error.html.slim within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 715ms (Views: 712.2ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:49 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.3ms)
+Completed 200 OK in 731ms (Views: 726.0ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:50 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering errors/error.html.slim within layouts/application
+  Rendered errors/error.html.slim within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 718ms (Views: 714.8ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:52 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.6ms)
+Completed 200 OK in 747ms (Views: 742.7ms)
+Started GET "/no-relationship?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:53 +0000
+Processing by ApplicationController#render_no_relationship as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering errors/error.html.slim within layouts/application
+  Rendered errors/error.html.slim within layouts/application (1.0ms)
+Completed 200 OK in 726ms (Views: 723.0ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:55 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (2.5ms)
+Completed 200 OK in 959ms (Views: 685.4ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:58 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.6ms)
+Completed 200 OK in 745ms (Views: 736.9ms)
+Started PUT "/users/4" for 172.26.0.5 at 2021-01-28 20:35:59 +0000
+Processing by UsersController#update as JSON
+  Parameters: {"id"=>"4", "user"=>{}}
+Completed 200 OK in 14ms (Views: 0.2ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:35:59 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (2.5ms)
+Completed 200 OK in 791ms (Views: 777.8ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:01 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (2.3ms)
+Completed 200 OK in 763ms (Views: 751.7ms)
+Started PUT "/users/0" for 172.26.0.5 at 2021-01-28 20:36:03 +0000
+Processing by UsersController#update as JSON
+  Parameters: {"id"=>"0", "user"=>{}}
+Completed 200 OK in 6ms (Views: 0.2ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:03 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+Redirected to http://tide.test:3000/no-relationship?bcs_token=abc
+Filter chain halted as :require_relationship rendered or redirected
+Completed 302 Found in 6ms
+Started GET "/no-relationship?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:03 +0000
+Processing by ApplicationController#render_no_relationship as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering errors/error.html.slim within layouts/application
+  Rendered errors/error.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 755ms (Views: 751.5ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:04 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 928ms (Views: 711.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:07 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 911ms (Views: 699.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:09 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.0ms)
+Completed 200 OK in 936ms (Views: 726.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:12 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 973ms (Views: 722.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:15 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.9ms)
+Completed 200 OK in 763ms (Views: 760.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:17 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 721ms (Views: 717.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:20 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.3ms)
+Completed 200 OK in 746ms (Views: 742.7ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:22 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.9ms)
+Completed 200 OK in 731ms (Views: 728.7ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:25 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.5ms)
+Completed 200 OK in 749ms (Views: 743.7ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:28 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 733ms (Views: 730.0ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:31 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.2ms)
+Completed 200 OK in 742ms (Views: 739.5ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:35 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 1030ms (Views: 780.5ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:38 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 975ms (Views: 711.1ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:36:41 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 6ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:42 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.3ms)
+Completed 200 OK in 752ms (Views: 749.1ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:36:44 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.4ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:45 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 744ms (Views: 740.9ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:36:48 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:48 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.1ms)
+Completed 200 OK in 720ms (Views: 716.0ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:36:51 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:51 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.0ms)
+Completed 200 OK in 689ms (Views: 685.5ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:36:54 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (1.1ms)
+Completed 201 Created in 5ms (Views: 0.2ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:54 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.9ms)
+Completed 200 OK in 730ms (Views: 727.2ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:36:58 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"DELIVER", "address"=>{"streetAddress1"=>"test st.", "streetAddress2"=>"building 2", "city"=>"columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"DELIVER", "address"=>{"streetAddress1"=>"test st.", "streetAddress2"=>"building 2", "city"=>"columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 4ms (Views: 0.4ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:36:59 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.2ms)
+Completed 200 OK in 773ms (Views: 770.2ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:02 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"DELIVER", "address"=>{"streetAddress1"=>"test st.", "streetAddress2"=>"building 2", "city"=>"columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"DELIVER", "address"=>{"streetAddress1"=>"test st.", "streetAddress2"=>"building 2", "city"=>"columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:37:03 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.2ms)
+Completed 200 OK in 748ms (Views: 744.0ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:06 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"DELIVER", "address"=>{"streetAddress1"=>"test st.", "streetAddress2"=>"building 2", "city"=>"columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"DELIVER", "address"=>{"streetAddress1"=>"test st.", "streetAddress2"=>"building 2", "city"=>"columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.4ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:37:07 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.1ms)
+Completed 200 OK in 730ms (Views: 726.7ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:10 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"DELIVER", "address"=>{"streetAddress1"=>"test st.", "streetAddress2"=>"building 2", "city"=>"columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"DELIVER", "address"=>{"streetAddress1"=>"test st.", "streetAddress2"=>"building 2", "city"=>"columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:37:11 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.0ms)
+Completed 200 OK in 727ms (Views: 723.1ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:15 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"DELIVER", "address"=>{"streetAddress1"=>"test st.", "streetAddress2"=>"building 2", "city"=>"columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"DELIVER", "address"=>{"streetAddress1"=>"test st.", "streetAddress2"=>"building 2", "city"=>"columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.4ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:37:16 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.0ms)
+Completed 200 OK in 714ms (Views: 711.0ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:18 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:37:19 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.9ms)
+Completed 200 OK in 733ms (Views: 730.6ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:21 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:37:22 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.0ms)
+Completed 200 OK in 754ms (Views: 749.9ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:24 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:37:25 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.0ms)
+Completed 200 OK in 743ms (Views: 739.4ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:27 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:37:28 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.1ms)
+Completed 200 OK in 722ms (Views: 718.2ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:30 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:37:31 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.4ms)
+Completed 200 OK in 751ms (Views: 748.2ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:33 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>false, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:37:34 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 947ms (Views: 692.4ms)
+Started POST "/refill" for 172.26.0.5 at 2021-01-28 20:37:36 +0000
+Processing by RefillController#create as JSON
+  Parameters: {"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0, "refill"=>{"paymentMethod"=>"INSURANCE", "recentVisit"=>true, "deliveryMethod"=>"PICKUP", "address"=>{"streetAddress1"=>"812 Keene Street", "streetAddress2"=>"", "city"=>"Columbia", "state"=>"MO", "zipcode"=>"65201", "country"=>""}, "patientIndex"=>0}}
+  Rendered refill/_nurse_message.text.slim (0.1ms)
+Completed 201 Created in 5ms (Views: 0.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:48:18 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (9.1ms)
+Completed 200 OK in 1287ms (Views: 937.4ms)
+Started GET "/401" for 172.26.0.5 at 2021-01-28 20:48:20 +0000
+Processing by ApplicationController#render_unauthorized as HTML
+  Rendering errors/error.html.slim within layouts/application
+  Rendered errors/error.html.slim within layouts/application (3.0ms)
+Completed 401 Unauthorized in 797ms (Views: 796.5ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:48:21 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.0ms)
+Completed 200 OK in 778ms (Views: 774.7ms)
+Started GET "/404?bcs_token=abc" for 172.26.0.5 at 2021-01-28 20:48:23 +0000
+Processing by ApplicationController#render_not_found as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering errors/error.html.slim within layouts/application
+  Rendered errors/error.html.slim within layouts/application (0.7ms)
+Completed 404 Not Found in 742ms (Views: 739.4ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:55:52 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (6.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /portal-allergy_vials/public/packs-test
+Completed 200 OK in 19516ms (Views: 19181.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:56:23 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 557ms (Views: 554.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:56:35 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 551ms (Views: 548.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:56:46 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 528ms (Views: 525.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:56:58 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 534ms (Views: 532.1ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:57:10 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 534ms (Views: 531.2ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:57:21 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 542ms (Views: 539.7ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:57:33 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 527ms (Views: 524.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:57:45 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 524ms (Views: 521.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:57:56 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 547ms (Views: 544.2ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:58:08 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.2ms)
+Completed 200 OK in 542ms (Views: 539.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:58:20 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 975ms (Views: 972.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:58:32 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 547ms (Views: 544.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:58:44 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 571ms (Views: 566.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:58:56 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 527ms (Views: 524.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:59:07 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 544ms (Views: 542.1ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-01 22:59:19 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 879ms (Views: 565.2ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:51:19 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (7.5ms)
+Completed 200 OK in 1682ms (Views: 1289.4ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:51:32 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.2ms)
+Completed 200 OK in 743ms (Views: 739.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:51:44 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 723ms (Views: 720.1ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:51:56 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 657ms (Views: 654.1ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:52:08 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.1ms)
+Completed 200 OK in 649ms (Views: 645.7ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:52:20 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 606ms (Views: 602.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:52:32 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 667ms (Views: 663.4ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:52:44 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 657ms (Views: 653.7ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:52:55 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (2.7ms)
+Completed 200 OK in 607ms (Views: 604.8ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:53:07 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 639ms (Views: 635.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:53:19 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 608ms (Views: 604.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:53:31 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 629ms (Views: 625.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:53:43 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.7ms)
+Completed 200 OK in 1227ms (Views: 1218.7ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:53:56 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 703ms (Views: 699.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:54:08 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 662ms (Views: 658.8ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:54:19 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.0ms)
+Completed 200 OK in 648ms (Views: 645.0ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:54:31 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.6ms)
+Completed 200 OK in 924ms (Views: 664.4ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 14:58:46 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (11.4ms)
+Completed 200 OK in 1518ms (Views: 1152.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:48:20 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (7.2ms)
+Completed 200 OK in 1573ms (Views: 1241.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:48:33 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 591ms (Views: 588.9ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:48:44 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 575ms (Views: 573.0ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:48:56 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 611ms (Views: 607.7ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:49:08 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 592ms (Views: 589.6ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:49:20 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 592ms (Views: 589.1ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:49:31 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.9ms)
+Completed 200 OK in 615ms (Views: 610.5ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:49:43 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.1ms)
+Completed 200 OK in 596ms (Views: 593.2ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:49:55 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.9ms)
+Completed 200 OK in 565ms (Views: 562.1ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:50:07 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 570ms (Views: 567.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:50:18 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 636ms (Views: 633.7ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:50:30 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 568ms (Views: 566.1ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:50:42 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 629ms (Views: 624.0ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:50:53 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 644ms (Views: 641.5ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:51:05 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (1.1ms)
+Completed 200 OK in 567ms (Views: 564.4ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:51:17 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 556ms (Views: 553.3ms)
+Started GET "/?bcs_token=abc" for 172.26.0.5 at 2021-02-02 15:51:29 +0000
+Processing by RefillController#index as HTML
+  Parameters: {"bcs_token"=>"abc"}
+  Rendering refill/index.html.slim within layouts/application
+  Rendered refill/index.html.slim within layouts/application (0.7ms)
+Completed 200 OK in 835ms (Views: 571.8ms)

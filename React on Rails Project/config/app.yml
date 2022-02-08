@@ -1,0 +1,75 @@
+defaults: &defaults
+  # define site title
+  site_title: 'Allergy Vial Refill Request'
+
+  self_pay_insurance_ids:
+    - 1000178
+    - 81983326
+    - 95048665
+    - 98241167
+
+  mu_insurance_ids:
+    - 97254875
+    - 97256434
+    - 97257565
+
+  mu_copay_amount: 71.25
+  no_copay_amount: TBD
+  message:
+    receivers:
+      -
+        # receiverId: 16028311 # C810 "Test Pool"
+        receiverId: 20308523 # TIGER "Vial Renewal from MUHealthe"
+        type: 'POOL'
+    subject: Online allergy vial refill
+
+  visit_attending_physician: 708629
+  visit_billing_location: EAC
+
+  # DEx issuer to JWK url cross reference list
+  dex_issuer_jwk_xref:
+    'http://tide-alt.test:3000': 'http://tide-alt.test:3000/dex-framework/authorization/jwk'
+    'https://muhealthedev.consumerportal.healtheintent.com': 'https://authorization.cerrner.com/jwk'
+    'https://muhealtheqa.consumerportal.healtheintent.com': 'https://authorization.cerrner.com/jwk'
+    'https://dev.muhealth.patientportal.us-1.healtheintent.com': 'https://authorization.cerrner.com/jwk'
+    'https://qa.muhealth.patientportal.us-1.healtheintent.com': 'https://authorization.cerrner.com/jwk'
+    'https://muhealth.patientportal.us-1.healtheintent.com': 'https://authorization.cerrner.com/jwk'
+
+  # define support phone number
+  support_phone: 1-888-443-8271
+
+  # self enrollment url
+  self_enroll_url: https://muhealthe.iqhealth.com/self-enroll
+
+  login_url: http://tide-alt.test:3000/dex-framework/parent
+
+  detect_iframe: true
+  chatbot:
+    enable: false
+    js_uri: https://tide-covid-bucket.s3.amazonaws.com/main.prod.js
+
+  preferred_alias_type: MRN
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+  detect_iframe: false
+  chatbot:
+    enable: false
+
+certification:
+  <<: *defaults
+  login_url: https://qa.muhealth.patientportal.us-1.healtheintent.com/pages/health_record3/allergy_vial_request
+
+production:
+  <<: *defaults
+  message:
+    receivers:
+      -
+        receiverId: 20308523
+        type: 'POOL'
+    subject: Online allergy vial refill
+
+  login_url: https://muhealth.patientportal.us-1.healtheintent.com/pages/health_record3/allergy_vial_request

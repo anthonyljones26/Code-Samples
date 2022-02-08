@@ -1,0 +1,6 @@
+--color
+--format progress
+--profile 10
+--require rails_helper
+--tty
+

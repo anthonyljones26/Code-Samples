@@ -1,0 +1,32 @@
+.graph-main.medication-container
+  .accordion.graph-title class = (is_maximized ? 'active' : 'inactive')
+    .terra-Grid
+      .terra-Title.terra-Title--tiny.terra-Title--verticalLeft.terra-Grid-col.terra-Grid-col--3
+        p.terra-Title--heading.title-size
+          | #{t('medication.title')}
+      .terra-Grid-col.terra-Grid-col--9.medication-options
+        .medication-option
+          label.sort-by-selector
+            ' #{t(GRAPH_CONFIG['sort_by']['i18n'])}:
+          select.sort-by name="sort-by"
+            - GRAPH_CONFIG['sort_by']['options'].each do |sort_option|
+              option value="#{sort_option['value']}" selected=('' if sort_option['selected'])
+                | #{t(sort_option['i18n'])}
+        .medication-option
+          label
+            input.filter-inactive-checkbox name="filter-inactive-checkbox" type="checkbox" checked=false
+            ' #{t('medication.filters.active_meds')}
+        .medication-option
+          label
+            input.filter-inpatient-checkbox name="filter-inpatient-checkbox" type="checkbox" checked=false
+            ' #{t('medication.filters.home_meds')}
+  .toggle-body class = ('hidden-div' unless is_maximized)
+    .terra-Grid.medication-graph-container
+      .graph-container.terra-Grid-col.terra-Grid-col--9
+        .chart-container
+        .error-container
+          span
+        .preloader-container
+          .preloader
+    p.disclaimer
+      | * #{t('medication.disclaimer')}

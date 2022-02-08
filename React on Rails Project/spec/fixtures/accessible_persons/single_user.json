@@ -1,0 +1,18 @@
+[
+  {
+    "first_name": "PEACH",
+    "last_name": "TEST",
+    "millennium_person_id": "5",
+    "date_of_birth": "1980-01-01",
+    "is_user": "true",
+    "aliases": [{
+      "alias": "12345678901234567890123456789012",
+      "type": "MESSAGING",
+      "pool": "MESSAGING CERNPHR"
+    }, {
+      "alias": "12345678",
+      "type": "MRN",
+      "pool": "University Hospital MRN Pool"
+    }]
+  }
+]

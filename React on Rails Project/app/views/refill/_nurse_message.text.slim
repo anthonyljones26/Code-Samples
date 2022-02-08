@@ -1,0 +1,13 @@
+|
+  Name: #{@active_user.name}
+
+  Date of Birth: #{@active_user.date_of_birth}
+
+  How will you be paying for your refill? #{payment_method}
+
+  Have you seen an allergy doctor or had an e-Visit within the last year? #{recent_visit ? 'Yes' : 'No'}
+
+  Amount to be billed: #{amount_paid}
+
+  Delivery Method: #{delivery_method}
+  #{address.to_address_str}

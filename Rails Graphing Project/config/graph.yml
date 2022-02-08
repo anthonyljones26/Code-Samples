@@ -1,0 +1,59 @@
+default: &default
+  title: Smart Results Graphing
+  date_range:
+    i18n: 'date_range.title'
+    options:
+      1D:
+        i18n: date_range.options.1_day
+        value: 1
+      1W:
+        i18n: date_range.options.1_week
+        value: 7
+      1M: 
+        i18n: date_range.options.1_month
+        value: 30
+      2M:
+        i18n: date_range.options.2_months
+        value: 60
+      6M:
+        i18n: date_range.options.6_months
+        value: 180
+      1Y:
+        i18n: date_range.options.1_year
+        value: 365
+      2Y:
+        i18n: date_range.options.2_years
+        value: 730
+    default: 2M
+  default_observation: 'BP'
+  components:
+    MED:
+      i18n: 'medication.title'
+    OBS:
+      i18n: 'observation.title'
+  observations: 
+    BP:
+      i18n: 'blood_pressure.title'
+  sort_by:
+    i18n: 'medication.sort_by.title'
+    options:
+        - i18n: medication.sort_by.options.alphabetical
+          value: alphabetical
+          selected: true
+        - i18n: medication.sort_by.options.activity
+          value: activity
+          selected: false
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+sandbox:
+  <<: *default
+
+certification:
+  <<: *default
+
+production:
+  <<: *default

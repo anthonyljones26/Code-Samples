@@ -1,0 +1,27 @@
+defaults: &defaults
+  token_defaults:
+    minimum_ttl: 480000
+    # sub_value: urn:cerrner:identity-federation:realm:WEfwvOx-wb4jL3EA_vjjD98Jbl0M9Rc3-ch:principal:t58zs5yn5u697s44
+    # sub_value: urn:cerrner:identity-federation:realm:WEfwvOx-wb4jL3EA_vjjD98Jbl0M9Rc3-ch:principal:fu6fe6jn3v64zm5l # ztest_cat [DEV]
+    # sub_value: urn:cerrner:identity-federation:realm:WEfwvOx-wb4jL3EA_vjjD98Jbl0M9Rc3-ch:principal:9m9su3it7rq3st8m # testportalsophia [TIGER]
+    sub_value: urn:cerrner:identity-federation:realm:WEfwvOx-wb4jL3EA_vjjD98Jbl0M9Rc3-ch:principal:pw2xc8wd8ux4rn9w # TESTPORTALMIKE [TIGER]
+    exp_minutes: 10
+  pagelets:
+    -
+      name: Dashboard
+      url: http://tide.test:3000
+  active_patient:
+    value: 29050074
+    type: MRN
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+certification:
+  <<: *defaults
+
+production:
+  <<: *defaults

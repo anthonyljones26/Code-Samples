@@ -1,0 +1,35 @@
+doctype html
+html lang='en-us' dir='ltr' hidden=true
+  head
+    title = t(:page_title)
+    meta http-equiv='X-UA-Compatible' content='IE=edge'
+    meta charset='utf-8'
+    meta name='viewport' content='width=device-width, initial-scale=1'
+    meta name='description' content=t(:meta_description)
+    meta name='keywords' content=t(:meta_keywords)
+    = csrf_meta_tags
+
+    = stylesheet_pack_tag 'application', media: 'all'
+
+  body class=[controller_name, action_name]
+    =  yield
+
+    / NOTE: polyfill needs to be in application js or in this external js, not both
+    / script src='https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.23.0/polyfill.min.js'
+    script src='https://d3utab4pcwsdva.cloudfront.net/healthelife_sdk.js'
+
+    = javascript_pack_tag 'application'
+
+    / allow overflow during tests only; so Capybara can scroll to elements not visible within browser window
+    - if Rails.env.test?
+      scss:
+        html, body {
+          overflow: auto;
+        }
+
+    - if APP_CONFIG['chatbot'] && APP_CONFIG['chatbot']['enable']
+      = javascript_include_tag APP_CONFIG['chatbot']['js_uri']
+      javascript:
+        document.addEventListener('DOMContentLoaded', function() {
+          $TIDE.Chatbot.init();
+        });

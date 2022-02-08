@@ -1,0 +1,16 @@
+.page-container
+  .main
+    .selector-container
+      label.date-range-selector
+        ' #{t(GRAPH_CONFIG['date_range']['i18n'])}:
+        select#date-range name="date-range"
+          - GRAPH_CONFIG['date_range']['options'].each do |key, date_option|
+            option value="#{date_option['value']}" selected=('' if key == session[:launch_config][:time_range].to_s)
+              | #{t(date_option['i18n'])}
+
+    - session[:launch_config][:components].each do |component|
+      - case component[:component_type]
+        - when :OBS
+          == render 'blood_pressure', is_maximized: component[:is_maximized]
+        - when :MED
+          == render 'medication_timeline', is_maximized: component[:is_maximized]

@@ -1,0 +1,140 @@
+env:
+  browser: true
+  es6: true
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+globals:
+  $: true
+  App: true
+  ActionCable: true
+  c3: true
+  d3: true
+  ROUTES: true
+  $HL: true
+parser: babel-eslint
+parserOptions:
+  ecmaVersion: 6
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+plugins:
+  - react
+root: true
+rules:
+  max-len:
+    - 1
+    - 120 # line length
+    - 2 # tab width
+  indent:
+    - 2
+    - 2 # 2 spaces
+    - SwitchCase: 1
+  quotes:
+    - 2
+    - single
+  jsx-quotes:
+    - error
+    - prefer-single
+  keyword-spacing: 2
+  space-before-blocks:
+    - 2
+    - always
+  space-before-function-paren:
+    - 2
+    - never
+  dot-location:
+    - 2
+    - property
+  dot-notation:
+    - 2
+    - allowKeywords: true
+  space-infix-ops: 2
+  key-spacing:
+    - 2
+    -
+      beforeColon: false
+      afterColon: true
+  operator-linebreak:
+    - 2
+    - after
+  no-spaced-func: 2
+  comma-spacing:
+    - 1
+    -
+      before: false
+      after: true
+  no-multiple-empty-lines:
+    - 2
+    -
+      max: 1
+      maxEOF: 1
+  new-cap:
+    - 2
+    - capIsNew: false
+  semi-spacing:
+    - 1
+    -
+      before: false
+      after: true
+  brace-style: 1
+  object-curly-spacing:
+    - error
+    - always
+  space-in-parens: 1
+
+  # coding style
+  curly: 2
+  wrap-iife:
+    - 2
+    - inside
+  eqeqeq: 2
+  no-use-before-define:
+    - 2
+    - nofunc
+  no-unexpected-multiline: 2
+  no-multi-str: 2
+  semi:
+    - 2
+    - always
+
+  # os/git options
+  no-trailing-spaces: 2
+  linebreak-style:
+    - 2
+    - unix
+  eol-last: 2
+
+  #react rules
+  react/boolean-prop-naming: 2
+  react/jsx-child-element-spacing: 2
+  react/jsx-closing-tag-location: 2
+  react/jsx-closing-bracket-location: 2
+  react/jsx-curly-spacing:
+    - 2
+    -
+      when: always
+      children: true
+      spacing:
+        objectLiterals: never
+  react/jsx-equals-spacing:
+    - 2
+    - always
+  react/jsx-indent-props:
+    - 2
+    - 2
+  react/jsx-indent:
+    - 2
+    - 2
+  react/jsx-no-duplicate-props: 2
+  react/jsx-tag-spacing:
+    - 2
+    -
+      closingSlash: never
+      beforeSelfClosing: always
+      afterOpening: never
+      beforeClosing: never
+  react/jsx-uses-react: error
+  react/jsx-uses-vars: error
+  react/no-unused-state: 2
+  react/style-prop-object: 2

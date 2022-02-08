@@ -1,0 +1,14 @@
+defaults: &defaults
+  password: cerrner01
+
+cat:
+  <<: *defaults
+  username: muhealthe@gmail.com
+
+felix:
+  <<: *defaults
+  username: felix_ztest
+
+darkwing_duck:
+  <<: *defaults
+  username: darkwing_duck

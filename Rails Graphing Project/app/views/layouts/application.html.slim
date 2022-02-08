@@ -1,0 +1,26 @@
+doctype html
+html.terra-Application hidden='hidden'
+  head
+    meta http-equiv='X-UA-Compatible' content='IE=edge'
+    meta charset='utf-8'
+    meta content='width=device-width, initial-scale=1' name='viewport'
+    = csrf_meta_tags
+    title ResultsGraphingFhir
+    = stylesheet_link_tag(*webpack_asset_paths('vendor', extension: 'css'), media: 'all')
+    = stylesheet_link_tag(*webpack_asset_paths('main', extension: 'css'), media: 'all')
+    javascript:
+      var ROUTES = {
+        graph_data: '#{graph_data_url}',
+        med_graph_data: '#{med_graph_data_url}',
+        log_data: '#{logs_url}',
+        keep_alive: '#{keep_alive_index_url}'
+      };
+      var KEEP_ALIVE = {
+        expireTime: '#{session_token_expires_at}'
+      };
+  body class=[controller_name, action_name]
+    = yield
+    = javascript_include_tag(*webpack_asset_paths('vendor', extension: 'js'))
+    - if Rails.env.test? || Rails.env.development?
+      = javascript_include_tag(*webpack_asset_paths('timekeeper', extension: 'js'))
+    = javascript_include_tag(*webpack_asset_paths('main', extension: 'js'))

@@ -1,0 +1,58 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  result_type: Result Type
+  date_range:
+    title: Time Range
+    options:
+      1_day: 1 Day
+      1_week: 1 Week
+      1_month: 1 Month
+      2_months: 2 Months
+      6_months: 6 Months
+      1_year: 1 Year
+      2_years: 2 Years
+  blood_pressure:
+    title: Blood Pressure
+    unit: (mmHg)
+    sources:
+      title: Sources
+      home: Home
+      office: Office
+      other: Other
+    systolic: Systolic
+    diastolic: Diastolic
+    goal_range: Show Goal Range
+    smoothing: Show Smoothing
+  observation:
+    title: Observations
+  medication:
+    title: Medications
+    disclaimer: This product uses publicly available data from the U.S. National Library of Medicine (NLM), National Institutes of Health, Department of Health and Human Services; NLM is not responsible for the product and does not endorse or recommend this or any other product.
+    filters:
+      home_meds: Home Meds Only
+      active_meds: Active Meds Only
+    sort_by:
+        title: Sort By
+        options:
+          alphabetical: A-Z
+          activity: Last Updated

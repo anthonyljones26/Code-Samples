@@ -1,0 +1,99 @@
+default: &default
+  encounter:
+    class_map:
+      office:
+        - inpatient
+        - outpatient
+        - ambulatory
+        - emergency
+        - daytime
+      home:
+        - virtual
+        - other
+      other:
+        - home
+        - field
+  observation:
+    status_whitelist:
+      - final
+      - amended
+      - corrected
+      - active
+    source:
+      home:
+        display: home
+        code_text_pairs:
+          - ["Average Home SBP", "Average Home DBP"]
+          - ["SBP Home", "DBP Home"]
+      office:
+        display: office
+        code_text_pairs:
+          - ["SBP Arterial", "DBP Arterial"]
+          - ["SBP NIBP", "DBP NIBP"]
+          - ["Systolic Blood Pressure", "Diastolic Blood Pressure"]
+      other:
+        display: other
+        code_text_pairs:
+          - ["ANES SBP Arterial", "ANES DBP Arterial"]
+          - ["ANES SBP NIBP", "ANES DBP NIBP"]
+          - ["Blood Pressure Systolic", "Blood Pressure Diastolic"]
+          - ["SBP Standing L Arm", "DBP Standing L Arm"]
+          - ["SBP Standing R Arm", "DBP Standing R Arm"]
+          - ["SBP Supine L Arm", "DBP Supine L Arm"]
+          - ["SBP Supine R Arm", "DBP Supine R Arm"]
+          - ["SBP Upright L Arm", "DBP Upright L Arm"]
+          - ["Systolic Blood Pressure Sitting", "Diastolic Blood Pressure Sitting"]
+          - ["Systolic Blood Pressure Standing", "Diastolic Blood Pressure Standing"]
+          - ["Systolic Blood Pressure Supine", "Diastolic Blood Pressure Supine"]
+          - ["LLE Systolic Blood Pressure", "LLE Diastolic Blood Pressure"]
+          - ["LUE Systolic Blood Pressure", "LUE Diastolic Blood Pressure"]
+          - ["Prehospital SBP", "Prehospital DBP"]
+          - ["RLE Systolic Blood Pressure", "RLE Diastolic Blood Pressure"]
+          - ["RUE Systolic Blood Pressure", "RUE Diastolic Blood Pressure"]
+  medication_order:
+    status_whitelist:
+      - active
+      - completed
+      - stopped
+      - on-hold
+  medication_statement:
+    status_whitelist:
+      - active
+      - completed
+      - intended
+    categories:
+      -
+        display: Inpatient
+        codes:
+          - inpatient
+      -
+        display: Outpatient
+        codes:
+          - outpatient
+          - community
+          - patientspecified
+    code_system: http://hl7.org/fhir/medication-statement-category
+  difference_log:
+    - medication
+    - start_date
+    - end_date
+    - strength
+    - quantity
+    - frequency
+    - additional_instructions
+
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+sandbox:
+  <<: *default
+
+certification:
+  <<: *default
+
+production:
+  <<: *default

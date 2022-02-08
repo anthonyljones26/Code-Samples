@@ -1,0 +1,48 @@
+.medication-container {
+  .med-group {
+    .med-bar {
+      fill: $med-bar-fill;
+      fill-opacity: .7;
+      stroke: $med-bar-stroke;
+      stroke-width: 1px;
+
+      &:hover {
+        fill-opacity: .9;
+        stroke-width: 2px;
+      }
+    }
+
+    .med-bar-label {
+      fill: $med-bar-label-fill;
+      font-size: 1rem;
+      pointer-events: none;
+      text-anchor: end;
+    }
+
+    &.med-group-inactive {
+      .med-bar {
+        fill-opacity: .05;
+        stroke-opacity: .2;
+      }
+
+      .med-bar-label {
+        fill-opacity: .05;
+      }
+    }
+  }
+
+  .disclaimer {
+    font-size: .65rem;
+    margin: .5rem;
+    padding: 0 2rem;
+  }
+}
+
+.medication-options {
+  text-align: right;
+
+  .medication-option {
+    display: inline-block;
+    margin: .5rem;
+  }
+}

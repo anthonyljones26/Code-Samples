@@ -1,0 +1,53 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      args:
+        APP_HOME: /portal-allergy_vials
+        GITHUB_TOKEN: ${GITHUB_TOKEN}
+    image: ti.portal-allergy_vials:${TAG-default}
+    command: rails server -p 3000 -b '0.0.0.0'
+    # command: rails server -p 3000 -b 'ssl://0.0.0.0?key=localhost.key&cert=localhost.crt' # helps to run under https
+    environment:
+      - APP_HOME=/portal-allergy_vials
+      - REDIS_HOST=redis
+      - REDIS_PASSWORD=**********
+      - WEBPACK_DEV_SERVER=true
+    volumes:
+      - .:/portal-allergy_vials
+      - /portal-allergy_vials/config/env/tide
+      - node_modules_directory:/portal-allergy_vials/node_modules
+      - user_directory:/root
+      - /portal-allergy_vials/tmp/
+    ports:
+      - "3000:3000"
+      # - "443:3000" # helps to run under https
+      - "3035:3035"
+    depends_on:
+      - redis
+    networks:
+      main:
+        aliases:
+          - tide-alt.test
+
+  redis:
+    image: redis:3.2.12
+    command: redis-server --requirepass develop
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_session:/data
+    networks:
+      - main
+
+volumes:
+  node_modules_directory:
+    driver: local
+  user_directory:
+    driver: local
+  redis_session:
+    driver: local
+
+networks:
+  main:

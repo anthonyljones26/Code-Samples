@@ -1,0 +1,49 @@
+env:
+  browser: true
+  es6: true
+extends: 'eslint:recommended'
+globals:
+  $: true
+  App: true
+  ActionCable: true
+  c3: true
+  d3: true
+  ROUTES: true
+  KEEP_ALIVE: true
+parserOptions:
+  sourceType: module
+root: true
+rules:
+  # formatting, spaces, operators
+  max-len: [1, 120, 2]
+  indent: [2, 2, SwitchCase: 1]
+  # quotes: [2, single]
+  keyword-spacing: 2
+  space-before-blocks: [2, always]
+  space-before-function-paren: [2, never]
+  dot-location: [2, property]
+  dot-notation: [2, allowKeywords: true]
+  space-infix-ops: 2
+  key-spacing: [2, {beforeColon: false, afterColon: true}]
+  operator-linebreak: [2, after]
+  no-spaced-func: 2
+  comma-spacing: [1, {before: false, after: true}]
+  no-multiple-empty-lines: [2, max: 1]
+  new-cap: [2, capIsNew: false]
+  semi-spacing: [1, {before: false, after: true}]
+  brace-style: 1
+  space-in-parens: 1
+
+  # coding style
+  curly: 2
+  wrap-iife: [2, inside]
+  eqeqeq: 2
+  no-use-before-define: [2, nofunc]
+  no-unexpected-multiline: 2
+  no-multi-str: 2
+  semi: [2, always]
+
+  # os/git options
+  no-trailing-spaces: 2
+  linebreak-style: [2, unix]
+  eol-last: 2

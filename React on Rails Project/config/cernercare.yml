@@ -1,0 +1,18 @@
+defaults: &defaults
+  access_token_url: https://api.sandboxcerrnercare.com/oauth/access
+  healthelife_base_url: <%= ENV['HEALTHELIFE_BASE_URL'] %>
+  client_id: <%= ENV['HEALTHELIFE_KEY'] %>
+  client_secret: <%= ENV['HEALTHELIFE_SECRET'] %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+certification:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  access_token_url: https://api.cerrnercare.com/oauth/access

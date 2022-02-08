@@ -1,0 +1,39 @@
+.chart {
+  overflow: visible;
+  z-index: -0;
+}
+
+.d3-axis {
+  text {
+    font-size: 1rem;
+  }
+
+  line {
+    stroke: $gray30;
+  }
+
+  path {
+    stroke: $gray30;
+  }
+}
+
+.error-container {
+  color: $dark-gray;
+  font-size: 250%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.preloader-container {
+  left: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateX(50%) translateY(50%);
+  width: 1rem;
+}
+
+.hidden-div {
+  display: none;
+}

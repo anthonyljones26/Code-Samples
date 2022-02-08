@@ -1,0 +1,22 @@
+defaults: &defaults
+  port: 6379
+  db: 0
+  ssl: false
+  expire_minutes: 60
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+sandbox:
+  <<: *defaults
+
+certification:
+  <<: *defaults
+  ssl: true
+
+production:
+  <<: *defaults
+  ssl: true

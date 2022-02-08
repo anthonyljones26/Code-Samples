@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fhir-ehr.sandboxcerrner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Observation?code=http://loinc.org%7C55284-4&date=ge2017-04-06T16:16:00%2B00:00&date=le2017-06-05T16:16:00%2B00:00&patient=1316024
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Bearer eyJraWQiOiIyMDE3LTA2LTAyVDE0OjE1OjQ4LjQ4OS5lYyIsInR5cCI6IkpXVCIsImFsZyI6IkVTMjU2In0.eyJzdWIiOiJwb3J0YWwiLCJ1cm46Y29tOmNlcm5lcjphdXRob3JpemF0aW9uOmNsYWltcyI6eyJ2ZXIiOiIxLjAiLCJlbmNvdW50ZXIiOiIyNjE5OTA2IiwidG50IjoiMGI4YTAxMTEtZThlNi00YzI2LWE5MWMtNTA2OWNiYzZiMWNhIiwiYXpzIjoib25saW5lX2FjY2VzcyBsYXVuY2ggcHJvZmlsZSBvcGVuaWQgcGF0aWVudFwvRW5jb3VudGVyLnJlYWQgcGF0aWVudFwvTWVkaWNhdGlvbk9yZGVyLnJlYWQgcGF0aWVudFwvTWVkaWNhdGlvblN0YXRlbWVudC5yZWFkIHBhdGllbnRcL09ic2VydmF0aW9uLnJlYWQiLCJ1c2VyIjoiNDQ2NDAwNyIsInBhdGllbnQiOiIxMzE2MDI0In0sImF6cCI6IjY3NWI0NWQ2LTg4MTItNDYyZi1hMWFkLWFjMTQ4ZGE4ZjE2NiIsImlzcyI6Imh0dHBzOlwvXC9hdXRob3JpemF0aW9uLnNhbmRib3hjZXJuZXIuY29tXC8iLCJleHAiOjE0OTY2Nzk5NTksImlhdCI6MTQ5NjY3OTM1OSwianRpIjoiMTVhZDkxYzgtZWNiZS00OGQ2LWI3N2MtY2ViMDcyYzhmMjY4IiwidXJuOmNlcm5lcjphdXRob3JpemF0aW9uOmNsYWltczp2ZXJzaW9uOjEiOnsidmVyIjoiMS4wIiwicHJvZmlsZXMiOnsibWlsbGVubml1bS12MSI6eyJwZXJzb25uZWwiOiI0NDY0MDA3IiwiZW5jb3VudGVyIjoiMjYxOTkwNiJ9LCJzbWFydC12MSI6eyJwYXRpZW50cyI6WyIxMzE2MDI0Il0sImF6cyI6Im9ubGluZV9hY2Nlc3MgbGF1bmNoIHByb2ZpbGUgb3BlbmlkIHBhdGllbnRcL0VuY291bnRlci5yZWFkIHBhdGllbnRcL01lZGljYXRpb25PcmRlci5yZWFkIHBhdGllbnRcL01lZGljYXRpb25TdGF0ZW1lbnQucmVhZCBwYXRpZW50XC9PYnNlcnZhdGlvbi5yZWFkIn19LCJjbGllbnQiOnsibmFtZSI6IlRJTEwgTG9jYWxob3N0IDMwMDAiLCJpZCI6IjY3NWI0NWQ2LTg4MTItNDYyZi1hMWFkLWFjMTQ4ZGE4ZjE2NiJ9LCJ1c2VyIjp7InByaW5jaXBhbCI6InBvcnRhbCIsInBlcnNvbmEiOiJwcm92aWRlciIsImlkc3AiOiIwYjhhMDExMS1lOGU2LTRjMjYtYTkxYy01MDY5Y2JjNmIxY2EiLCJwcmluY2lwYWxVcmkiOiJodHRwczpcL1wvbWlsbGVubmlhLnNhbmRib3hjZXJuZXIuY29tXC9pbnN0YW5jZVwvMGI4YTAxMTEtZThlNi00YzI2LWE5MWMtNTA2OWNiYzZiMWNhXC9wcmluY2lwYWxcLzAwMDAuMDAwMC4wMDQ0LjFEODciLCJpZHNwVXJpIjoiaHR0cHM6XC9cL21pbGxlbm5pYS5zYW5kYm94Y2VybmVyLmNvbVwvYWNjb3VudHNcL2ZoaXJwbGF5LnRlbXBfcmhvLmNlcm5lcmFzcC5jb21cLzBiOGEwMTExLWU4ZTYtNGMyNi1hOTFjLTUwNjljYmM2YjFjYVwvbG9naW4ifSwidGVuYW50IjoiMGI4YTAxMTEtZThlNi00YzI2LWE5MWMtNTA2OWNiYzZiMWNhIn19.SCOET8J45CQJ4TXCRNn9XmaCG1n4varuwLlIsKYTckS1jq14OEtA7Vs4bAnWZKXhWtDKCR-QF7r6TYvbRhIYmw
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 05 Jun 2017 16:16:00 GMT
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Origin,User-Agent
+      Strict-Transport-Security:
+      - max-age=631152000
+      Server-Response-Time:
+      - '386.09792999999996'
+      X-Xss-Protection:
+      - 1; mode=block
+      Pragma:
+      - no-cache
+      X-Request-Id:
+      - 57213b4db2074ab31f3e74e56a554d9d
+      X-Runtime:
+      - '0.386062'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Status:
+      - 200 OK
+      Content-Type:
+      - application/json+fhir; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"resourceType":"Bundle","id":"7a70dd24-b1e3-490f-9715-9ff3ece9b84c","type":"searchset","link":[{"relation":"self","url":"https://fhir-ehr.sandboxcerrner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Observation?code=http%3A%2F%2Floinc.org%7C55284-4\u0026date=ge2017-04-06T16%3A16%3A00%2B00%3A00\u0026date=le2017-06-05T16%3A16%3A00%2B00%3A00\u0026patient=1316024\u0026_count=50"}]}'
+    http_version:
+  recorded_at: Mon, 05 Jun 2017 16:16:00 GMT
+recorded_with: VCR 3.0.3

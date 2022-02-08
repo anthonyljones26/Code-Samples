@@ -1,0 +1,66 @@
+.tooltip {
+  background-color: $lighter-gray;
+  border: solid .063rem $light-gray;
+  box-shadow: -.188rem .188rem .37rem $medium-gray;
+  color: $black;
+  display: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  height: auto;
+  left: 0;
+  letter-spacing: normal;
+  line-height: normal;
+  max-width: 400px;
+  min-width: 200px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: auto;
+
+  .tooltip-label {
+    color: $gray;
+    font-size: .75rem;
+    height: 1.063rem;
+    text-align: left;
+  }
+
+  .tooltip-value {
+    color: $dark-gray;
+    font-size: .938rem;
+    font-weight: bold;
+    height: 1.25rem;
+    text-align: left;
+    text-shadow: 0 .063rem 0 $white;
+  }
+
+  .tooltip-section {
+    background-color: $white;
+    padding: .563rem;
+  }
+
+  .tooltip-header {
+    padding-bottom: 0;
+  }
+
+  .tooltip-entry {
+    margin: .563rem;
+  }
+
+  .bp-tooltip-value {
+    color: $dark-gray;
+    font-size: .938rem;
+  }
+
+  .bp-entry {
+    font-size: 1.25rem;
+  }
+}
+
+.bp-tooltip {
+  min-width: auto;
+}
+
+.bp-entry-divider {
+  margin: 0 1.5px;
+}

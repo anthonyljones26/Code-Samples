@@ -1,0 +1,57 @@
+.graph-main.blood-pressure-container
+  .accordion.graph-title class = (is_maximized ? 'active' : 'inactive')
+    .div
+      .terra-Title.terra-Title--tiny.terra-Title--verticalLeft
+        p.terra-Title--heading.title-size
+          | #{t('blood_pressure.title')}
+          span.unit
+            | #{t('blood_pressure.unit')}
+  .toggle-body class = ('hidden-div' unless is_maximized)
+    .terra-Grid
+      .graph-container.terra-Grid-col.terra-Grid-col--9
+        .chart-container
+        .error-container
+          span
+        .preloader-container
+          .preloader
+      .graph-sidebar.terra-Grid-col.terra-Grid-col--3
+        fieldset.graph-options
+          .option-items #{t('blood_pressure.sources.title')}:
+          .option-items
+            label.indent
+              input.home-bp-checkbox name="home-bp-checkbox" type="checkbox" checked=true
+              span.label-min-width #{t('blood_pressure.sources.home')}
+              svg.label-legend.home width="14" height="14"
+                == render 'shapes/circle', cx: 7, cy: 7, r: 5
+          .option-items
+            label.indent
+              input.office-bp-checkbox name="office-bp-checkbox" type="checkbox" checked=true
+              span.label-min-width #{t('blood_pressure.sources.office')}
+              svg.label-legend.office width="14" height="14"
+                == render 'shapes/rectangle', width: 9, height: 9, x: 2.5, y: 2.5, rx: 0, ry: 0
+          .option-items.other
+            label.indent
+              input.other-bp-checkbox name="other-bp-checkbox" type="checkbox" checked=true
+              span.label-min-width #{t('blood_pressure.sources.other')}
+              svg.label-legend.other width="14" height="14"
+                == render 'shapes/polygon', points: '7,1.8 1,12.2 13,12.2'
+          .option-items
+            label
+              input.systolic-checkbox name="systolic-checkbox" type="checkbox" checked=true
+              span.label-min-width #{t('blood_pressure.systolic')}
+              svg.label-legend.systolic width="12" height="12"
+                == render 'shapes/rectangle', width: 12, height: 12, x: 0, y: 0, rx: 4, ry: 4
+          .option-items
+            label
+              input.diastolic-checkbox name="diastolic-checkbox" type="checkbox" checked=true
+              span.label-min-width #{t('blood_pressure.diastolic')}
+              svg.label-legend.diastolic width="12" height="12"
+                == render 'shapes/rectangle', width: 12, height: 12, x: 0, y: 0, rx: 4, ry: 4
+          .option-items
+            label
+              input.normalcy-checkbox name="normalcy-checkbox" type="checkbox" checked=true
+              | #{t('blood_pressure.goal_range')}
+          .option-items
+            label
+              input.smoothing-checkbox name="smoothing-checkbox" type="checkbox" checked=true
+              | #{t('blood_pressure.smoothing')}

@@ -1,0 +1,27 @@
+:local {
+  .form-notice {
+    display: flex;
+    font-size: 85%;
+    margin-bottom: 1rem;
+    margin-top: 0;
+
+    p { margin-bottom: 0; }
+  }
+
+  .error {
+    color: var(--error-color);
+    font-weight: 700;
+    padding: 2px 2px 2px 0;
+  }
+
+  .copay-label {
+    color: var(--copay-label-color);
+  }
+}
+
+// overriding padding brought in on ul from old framework.
+#terra-select-dropdown { // sass-lint:disable-line no-ids
+  ul {
+    padding: 0;
+  }
+}

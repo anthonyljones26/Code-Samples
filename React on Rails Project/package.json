@@ -1,0 +1,43 @@
+{
+  "name": "portal-alergy_vials",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^3.5.5",
+    "babel-preset-react": "^6.24.1",
+    "classnames": "^2.2.6",
+    "clone": "^2.1.2",
+    "moment": "^2.27.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-on-rails": "11.3.0",
+    "terra-abstract-modal": "^3.26.0",
+    "terra-aggregate-translations": "^1.9.0",
+    "terra-base": "^5.36.0",
+    "terra-card": "^3.31.0",
+    "terra-content-container": "^3.28.0",
+    "terra-form-input": "^3.6.0",
+    "terra-form-select": "^6.9.0",
+    "terra-grid": "^6.22.0",
+    "terra-heading": "^4.31.0",
+    "terra-icon": "^3.32.0",
+    "terra-overlay": "^3.51.0",
+    "terra-text": "^4.31.0",
+    "tide-banner": "^1.0.2",
+    "tide-dex": "^1.1.0",
+    "tide-error-pagelet": "^1.0.2",
+    "tide-model": "^1.0.2",
+    "tide-notice": "^1.0.2",
+    "tide-patient-switcher": "^1.0.3",
+    "tide-responsive-element": "^1.0.2",
+    "tide-services": "^1.0.3",
+    "tide-title": "^1.0.3",
+    "tide-utils-convert": "^1.0.2",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "postcss-smart-import": "^0.7.6",
+    "react-intl": "^2.9.0",
+    "webpack-dev-server": "2.11.2"
+  }
+}

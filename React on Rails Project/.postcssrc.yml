@@ -1,0 +1,83 @@
+plugins:
+  postcss-smart-import:
+  postcss-cssnext:
+    browsers:
+      - last 2 versions
+      - '> 5%'
+      - IE >= 10
+    features:
+      customProperties:
+        warnings: false
+        variables:
+          copay-label-color: '#61a82a'
+          link-color: '#0000f0'
+          info-icon-color: '#000'
+          error-background: '#ffebeb'
+          success-background: '#e9f5e0'
+          success-icon-background: '#78c346'
+          warning-icon-background: '#e06c00'
+          warning-background: '#fff4eb'
+          required-fields-text-color: '#e50000'
+          button-primary-background: '#575757'
+          button-primary-border: '#382929'
+          button-primary-text: '#fff'
+          right-border-color: '#cecece'
+          appointment-list-header: '#f3b311'
+          ### NOTICE ###
+          notice-background: '#f4f4f4'
+          notice-border: '#dedfe0'
+          ### ALLERGYFORM ###
+          error-color: '#e50000'
+          terra-overlay-light-background-color: rgba(245, 245, 245, 0.7)
+          ### TERRA-BASE VARIABLES ###
+          terra-base-background-color: transparent
+          terra-base-background-size:
+          terra-base-background-repeat:
+          terra-base-background-position:
+          terra-base-background-image:
+          terra-base-background-attachment:
+          terra-base-line-height: '1.4285714285714286rem'
+          terra-base-html-height: 'auto'
+          ### TERRA-BUTTON ###
+            #### EMPHASIS ####
+          terra-button-color-emphasis: '#fff'
+          terra-button-background-color-emphasis: '#6b6b6b'
+          terra-button-border-color-emphasis: '#c8cacb'
+          terra-button-hover-background-color-emphasis: '#575757'
+            #### UTILITY ####
+          terra-button-hover-background-color-utility:
+          ### TERRA-ABSTRACT-MODAL ###
+          terra-abstract-modal-overlay-background-color: rgba(245, 245, 245, 0.7)
+          terra-abstract-modal-overlay-background-image:
+          terra-abstract-modal-overlay-foreground-color:
+          terra-abstract-modal-overlay-opacity:
+          ### TERRA-FORM-INPUT ###
+          terra-form-input-box-shadow:
+          terra-form-input-error-disabled-opacity:
+          terra-form-input-error-focus-animation-background:
+          terra-form-input-error-focus-keyboard-animation-size:
+          terra-form-input-error-focus-keyboard-box-shadow-ltr:
+          terra-form-input-error-focus-keyboard-box-shadow-rtl:
+          terra-form-input-focus-animation-background:
+          terra-form-input-focus-background-start:
+          terra-form-input-focus-keyboard-animation-size:
+          terra-form-input-focus-keyboard-box-shadow-ltr:
+          terra-form-input-focus-keyboard-box-shadow-rtl:
+          terra-form-input-placeholder-disabled-font-style:
+          terra-form-input-placeholder-font-style:
+          ### TERRA-LIST ###
+          terra-list-compact-item-fill-padding-bottom: '0'
+          terra-list-compact-item-fill-padding-top: '0'
+          terra-list-item-background-color: '#575757'
+          terra-list-item-divider-border-top: '1px solid rgba(255, 255, 255, 0.2)'
+          terra-list-item-focus-background-color: '#5f6061'
+          terra-list-item-hover-active-background-color: '#5f6061'
+          terra-list-item-last-divider-border-bottom: 'none'
+          terra-list-item-selected-background-color: '#5f6061'
+          terra-list-item-selected-focus-background-color: '#5f6061'
+          terra-list-item-selected-hover-background-color: '#5f6061'
+
+          ###TIDE Components###
+          --tide-patient-switcher-border: none
+          --tide-patient-switcher-border-radius: 0
+          --tide-patient-switcher-box-shadow: none

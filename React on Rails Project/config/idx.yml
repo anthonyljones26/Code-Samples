@@ -1,0 +1,19 @@
+defaults: &defaults
+  idx_server: UMCFCTST
+  wsdl: http://161.130.81.20:21345/hco.staging/PatientPortalService.asmx?wsdl
+  username: <%= ENV['IDX_USERNAME'] %>
+  password: <%= ENV['IDX_PASSWORD'] %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+certification:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  wsdl: http://161.130.81.20:21345/hco.production/PatientPortalService.asmx?wsdl
+  idx_server: UMC

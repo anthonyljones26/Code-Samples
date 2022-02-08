@@ -1,0 +1,27 @@
+defaults: &defaults
+  services_directory_url: https://directory.sandboxcareaware.com/services-directory
+  # authority: m810.univ_mo.cerrnerasp.com
+  # authority: c810.univ_mo.cerrnerasp.com
+  authority: tiger.univ_mo.cerrnerasp.com
+  mobjects_service_key: urn:cerrner:api:mobjects-toolkit:2.0
+  messaging_service_key: urn:cerrner:api:msvc-messaging:2.0
+  oauth_service_key: urn:cerrner:oauth-provider
+  consumer_key: <%= ENV['CAREAWARE_KEY'] %>
+  consumer_secret: <%= ENV['CAREAWARE_SECRET'] %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+certification:
+  <<: *defaults
+  # authority: m810.univ_mo.cerrnerasp.com
+  # authority: c810.univ_mo.cerrnerasp.com
+  authority: tiger.univ_mo.cerrnerasp.com
+
+production:
+  <<: *defaults
+  services_directory_url: https://directory.careaware.com/services-directory/
+  authority: p810.univ_mo.cerrnerasp.com

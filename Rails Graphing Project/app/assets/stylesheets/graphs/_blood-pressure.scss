@@ -1,0 +1,105 @@
+// sass-lint:disable class-name-format
+
+.blood-pressure-chart {
+  pointer-events: none;
+}
+
+.mouse-over-effects {
+  pointer-events: none;
+}
+
+.systolic-line {
+  fill: none;
+  pointer-events: none;
+  stroke: $systolic-dark;
+  stroke-width: 2;
+}
+
+.diastolic-line {
+  fill: none;
+  pointer-events: none;
+  stroke: $diastolic-dark;
+  stroke-width: 2;
+}
+
+.systolic-point {
+  fill: $systolic-dark;
+  pointer-events: auto;
+
+  &.active-point {
+    fill: darken($systolic-dark, 5%);
+    opacity: 1;
+    stroke: darken($systolic-dark, 5%);
+    stroke-width: 3;
+  }
+}
+
+.diastolic-point {
+  fill: $diastolic-dark;
+  pointer-events: auto;
+
+  &.active-point {
+    fill: darken($diastolic-dark, 5%);
+    opacity: 1;
+    stroke: darken($diastolic-dark, 5%);
+    stroke-width: 3;
+  }
+}
+
+.systolic-normalcy {
+  fill: $systolic-light;
+  fill-opacity: .3;
+}
+
+.diastolic-normalcy {
+  fill: $diastolic-light;
+  fill-opacity: .3;
+}
+
+.systolic-trend-line {
+  fill: none;
+  stroke: $systolic-dark;
+  stroke-width: 3;
+}
+
+.diastolic-trend-line {
+  fill: none;
+  stroke: $diastolic-dark;
+  stroke-width: 3;
+}
+
+.graph-sidebar {
+  .graph-options {
+    .label-min-width {
+      display: inline-block;
+      min-width: 5rem;
+    }
+
+    .option-items {
+      padding: .1rem;
+    }
+
+    .label-legend {
+      &.systolic {
+        fill: $systolic-dark;
+      }
+
+      &.diastolic {
+        fill: $diastolic-dark;
+      }
+    }
+  }
+}
+
+.d3-data.highlighting {
+  .systolic-point,
+  .diastolic-point,
+  .systolic-line,
+  .diastolic-line,
+  .systolic-trend-line,
+  .diastolic-trend-line {
+    &:not(.active-point) {
+      opacity: .5;
+    }
+  }
+}

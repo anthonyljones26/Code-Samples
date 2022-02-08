@@ -1,0 +1,123 @@
+[
+  {
+    "first_name": "BRYAN",
+    "last_name": "ZTEST",
+    "millennium_person_id": "",
+    "date_of_birth": "1980-01-01",
+    "is_user": false,
+    "aliases": [{
+      "alias": "12345678901234567890123456789012",
+      "alias_type": "MESSAGING",
+      "alias_pool": "MESSAGING CERNPHR"
+    },{
+      "alias": "10000000",
+      "alias_type": "MRN",
+      "alias_pool": "University Hospital MRN Pool"
+    }]
+  }, {
+    "first_name":"CAT",
+    "last_name":"ZTEST",
+    "millennium_person_id":"21354849",
+    "date_of_birth":"1980-01-01",
+    "is_user": true,
+    "aliases":[{
+      "alias": "12345678901234567890123456789012",
+      "alias_type": "MESSAGING",
+      "alias_pool": "MESSAGING CERNPHR"
+    },{
+      "alias": "10000001",
+      "alias_type": "MRN",
+      "alias_pool": "University Hospital MRN Pool"
+    }]
+  }, {
+    "first_name": "CAT",
+    "last_name": "ZTEST",
+    "millennium_person_id": "2",
+    "date_of_birth": "1980-01-01",
+    "is_user": false,
+    "aliases": [{
+      "alias": "12345678901234567890123456789012",
+      "alias_type": "MESSAGING",
+      "alias_pool": "MESSAGING CERNPHR"
+    },{
+      "alias": "10000002",
+      "alias_type": "MRN",
+      "alias_pool": "University Hospital MRN Pool"
+    }]
+  }, {
+    "first_name": "FCTST",
+    "last_name": "MOCK",
+    "millennium_person_id": "3",
+    "date_of_birth": "1980-01-01",
+    "is_user": false,
+    "aliases": [{
+      "alias": "12345678901234567890123456789012",
+      "alias_type": "MESSAGING",
+      "alias_pool": "MESSAGING CERNPHR"
+    },{
+      "alias": "10000003",
+      "alias_type": "MRN",
+      "alias_pool": "University Hospital MRN Pool"
+    }]
+  }, {
+    "first_name": "FOUR",
+    "last_name": "MOCK",
+    "millennium_person_id": "4",
+    "date_of_birth": "1980-01-01",
+    "is_user": false,
+    "aliases": [{
+      "alias": "12345678901234567890123456789012",
+      "alias_type": "MESSAGING",
+      "alias_pool": "MESSAGING CERNPHR"
+    },{
+      "alias": "10000004",
+      "alias_type": "MRN",
+      "alias_pool": "University Hospital MRN Pool"
+    }]
+  }, {
+    "first_name": "PENNY",
+    "last_name": "MOCK",
+    "millennium_person_id": "5",
+    "date_of_birth": "1980-01-01",
+    "is_user": false,
+    "aliases": [{
+      "alias": "12345678901234567890123456789012",
+      "alias_type": "MESSAGING",
+      "alias_pool": "MESSAGING CERNPHR"
+    }, {
+      "alias": "10000005",
+      "alias_type": "MRN",
+      "alias_pool": "University Hospital MRN Pool"
+    }]
+  }, {
+    "first_name": "PHYLLIS",
+    "last_name": "ZTEST",
+    "millennium_person_id": "6",
+    "date_of_birth": "1980-01-01",
+    "is_user": false,
+    "aliases": [{
+      "alias": "12345678901234567890123456789012",
+      "alias_type": "MESSAGING",
+      "alias_pool": "MESSAGING CERNPHR"
+    }, {
+      "alias": "10000006",
+      "alias_type": "MRN",
+      "alias_pool": "University Hospital MRN Pool"
+    }]
+  }, {
+    "first_name": "TURTLE",
+    "last_name": "ZTEST",
+    "millennium_person_id": "21354872",
+    "date_of_birth": "1980-01-01",
+    "is_user": false,
+    "aliases": [{
+      "alias": "12345678901234567890123456789012",
+      "alias_type": "MESSAGING",
+      "alias_pool": "MESSAGING CERNPHR"
+    },{
+      "alias": "10000007",
+      "alias_type": "MRN",
+      "alias_pool": "University Hospital MRN Pool"
+    }]
+  }
+]

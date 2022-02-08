@@ -1,0 +1,12 @@
+inherit_gem:
+  tide-rubocop:
+    - rubocop-rails.yml
+
+AllCops:
+  TargetRubyVersion: 2.5
+
+Rails/TimeZone:
+  Enabled: false # disabled due to application missing a time zone configuration
+
+RSpec:
+  Enabled: false

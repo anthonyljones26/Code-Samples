@@ -1,0 +1,136 @@
+
+.page-container {
+  margin: 0 .5rem;
+}
+
+.selector-container {
+  margin: .5rem 0;
+  text-align: right;
+  width: 100%;
+
+  label {
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    select {
+      background-color: $white;
+      border: 0;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+
+}
+
+.graph-main {
+  border: 1px solid $terra-black;
+  border-radius: 10px;
+  margin-bottom: .5rem;
+  padding: 0;
+
+
+  .accordion {
+    background-color: $invisible;
+    border: 0;
+    outline: none;
+    text-align: left;
+
+    .terra-Grid { // sass-lint:disable-line class-name-format
+      margin-left: 0;
+
+      .terra-Title { // sass-lint:disable-line class-name-format
+        display: block; // IE doesn't display correctly if display is table inside grid
+      }
+    }
+
+    .terra-Title { // sass-lint:disable-line class-name-format
+      border: 0;
+      cursor: pointer;
+      display: table;
+      font-weight: 700;
+      line-height: 5%;
+      margin: 0;
+      padding: 0;
+
+      .terra-Title--heading { // sass-lint:disable-line class-name-format
+        padding: 0 0 0 2rem;
+      }
+
+      &::before {
+        content: '\25BA'; // Unicode character for sign (>)
+        float: left;
+        font-size: 1rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 1.2rem;
+        transform: none;
+        transition: .5s;
+      }
+    }
+
+    &.active {
+      border-bottom: 1px solid $black;
+
+      .terra-Title { // sass-lint:disable-line class-name-format
+        &::before {
+          content: '\25BA'; // Unicode character for sign (>)
+          margin-right: .5rem;
+          margin-top: 1.2rem;
+          transform: rotate(90deg);
+          transition: .5s;
+        }
+      }
+    }
+
+    &.inactive {
+      border-bottom: 0 solid $lighter-gray;
+      transition: .6s;
+
+      .inpatient-container {
+        display: none;
+      }
+    }
+  }
+
+  .graph-title {
+    .unit {
+      font-size: .9rem;
+      margin-left: .5rem;
+      vertical-align: middle;
+    }
+  }
+
+  .title-size {
+    font-size: 1.2rem;
+  }
+
+  .graph-datepicker {
+    align-self: center;
+    position: absolute;
+    right: 2.45rem;
+    text-align: right;
+  }
+
+  .graph-container {
+    min-height: 150px;
+    padding: 0;
+    position: relative;
+  }
+}
+
+.graph-sidebar {
+  margin: .5rem 0;
+  padding: 0 1rem;
+
+  .graph-options {
+    background: $lighter-gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 1.25rem;
+
+    .indent {
+      margin-left: 1rem;
+    }
+  }
+}

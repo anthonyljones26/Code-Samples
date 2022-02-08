@@ -1,0 +1,20 @@
+defaults: &defaults
+  host: <%= ENV['REDIS_HOST'] %>
+  password: <%= ENV['REDIS_PASSWORD'] %>
+  port: 6379
+  db: 0
+  ssl: false
+  expire_minutes: 20
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+  expire_minutes: 1
+
+certification:
+  <<: *defaults
+
+production:
+  <<: *defaults

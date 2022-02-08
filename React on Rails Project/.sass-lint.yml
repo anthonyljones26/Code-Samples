@@ -1,0 +1,13 @@
+# File Options
+files:
+  include: 'app/**/*.s+(a|c)ss'
+# Rule Configuration
+rules:
+  indentation:
+    - 2
+    -
+      size: 2
+  nesting-depth:
+    - 1
+    -
+      max-depth: 3

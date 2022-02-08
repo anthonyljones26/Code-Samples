@@ -1,0 +1,41 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      args:
+        APP_HOME: /results-graphing-fhir
+        GITHUB_TOKEN: ${GITHUB_TOKEN}
+    image: ti.results-graphing-fhir:${TAG-default}
+    command: rails server -p 3000 -b '0.0.0.0'
+    environment:
+      - APP_HOME=/results-graphing-fhir
+      - REDIS_HOST=redis
+      - REDIS_PASSWORD=*******
+      - WEBPACK_DEV_SERVER=true
+    volumes:
+      - .:/results-graphing-fhir
+      - /results-graphing-fhir/config/env/tide
+      - node_modules_directory:/results-graphing-fhir/node_modules
+      - user_directory:/root
+    ports:
+      - "3000:3000"
+      - "3808:3808"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:3.2.12
+    command: redis-server --requirepass develop
+    ports:
+      - "6379"
+    volumes:
+      - redis_session:/data
+
+volumes:
+  node_modules_directory:
+    driver: local
+  user_directory:
+    driver: local
+  redis_session:
+    driver: local

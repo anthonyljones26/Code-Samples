@@ -1,0 +1,19 @@
+// This file is the main entry point in this project.
+// Component level css should be defined in separate files and imported into this file.
+
+// 1. base configuration
+@import 'base/variables';
+@import 'base/reset';
+
+// 2. theme
+@import 'themes/terra';
+
+// 3. layout
+@import 'layout/grid';
+
+// 4. graph components
+@import 'graphs/base';
+@import 'graphs/blood-pressure';
+@import 'graphs/medication-timeline';
+@import 'graphs/preloader';
+@import 'graphs/tooltip';

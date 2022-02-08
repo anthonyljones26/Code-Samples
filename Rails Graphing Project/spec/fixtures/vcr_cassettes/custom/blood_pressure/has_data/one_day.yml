@@ -1,0 +1,313 @@
+---
+  http_interactions:
+  - request:
+      method: get
+      uri: https://rxnav.nlm.nih.gov/REST/rxcui/855302/status
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        Accept-Encoding:
+        - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+        - "*/*"
+        User-Agent:
+        - Ruby
+        Host:
+        - rxnav.nlm.nih.gov
+    response:
+      status:
+        code: 200
+        message: ''
+      headers:
+        Date:
+        - Tue, 04 Aug 2020 21:10:05 GMT
+        Server:
+        - Apache
+        Strict-Transport-Security:
+        - max-age=63072000; includeSubdomains; preload
+        Content-Type:
+        - application/xml
+        Content-Length:
+        - '299'
+        Cache-Control:
+        - max-age=300
+        Expires:
+        - Tue, 04 Aug 2020 21:15:05 GMT
+        Access-Control-Allow-Origin:
+        - "*"
+        Access-Control-Allow-Headers:
+        - "*"
+      body:
+        encoding: UTF-8
+        string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><rxnormdata><rxcuiStatus><status>Active</status><remappedDate></remappedDate><minConceptGroup><minConcept><rxcui>855302</rxcui><name>Medication
+          D-RX sodium 2 MG Oral Tablet</name><tty>SCD</tty></minConcept></minConceptGroup></rxcuiStatus></rxnormdata>
+      http_version: 
+    recorded_at: Fri, 26 Apr 2013 16:00:02 GMT
+  - request:
+      method: get
+      uri: https://rxnav.nlm.nih.gov/REST/RxTerms/rxcui/855302/allinfo
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        Accept-Encoding:
+        - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+        - "*/*"
+        User-Agent:
+        - Ruby
+        Host:
+        - rxnav.nlm.nih.gov
+    response:
+      status:
+        code: 200
+        message: ''
+      headers:
+        Date:
+        - Tue, 04 Aug 2020 21:10:05 GMT
+        Server:
+        - Apache
+        Strict-Transport-Security:
+        - max-age=63072000; includeSubdomains; preload
+        Content-Type:
+        - application/xml
+        Content-Length:
+        - '556'
+        Cache-Control:
+        - max-age=300
+        Expires:
+        - Tue, 04 Aug 2020 21:15:06 GMT
+        Access-Control-Allow-Origin:
+        - "*"
+        Access-Control-Allow-Headers:
+        - "*"
+      body:
+        encoding: UTF-8
+        string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><rxtermsdata><rxtermsProperties><brandName></brandName><displayName>Medication
+          D-RX (Oral Pill)</displayName><synonym></synonym><fullName>Medication D-RX
+          sodium 2 MG Oral Tablet</fullName><fullGenericName>Medication D-RX sodium
+          2 MG Oral Tablet</fullGenericName><strength>2 mg</strength><rxtermsDoseForm>Tab</rxtermsDoseForm><route>Oral
+          Pill</route><termType>SCD</termType><rxcui>855302</rxcui><genericRxcui></genericRxcui><rxnormDoseForm>Oral
+          Tablet</rxnormDoseForm><suppress></suppress></rxtermsProperties></rxtermsdata>
+      http_version: 
+    recorded_at: Fri, 26 Apr 2013 16:00:03 GMT
+  - request:
+      method: get
+      uri: https://rxnav.nlm.nih.gov/REST/rxcui/855302/related?tty=IN
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        Accept-Encoding:
+        - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+        - "*/*"
+        User-Agent:
+        - Ruby
+        Host:
+        - rxnav.nlm.nih.gov
+    response:
+      status:
+        code: 200
+        message: ''
+      headers:
+        Date:
+        - Tue, 04 Aug 2020 21:10:05 GMT
+        Server:
+        - Apache
+        Strict-Transport-Security:
+        - max-age=63072000; includeSubdomains; preload
+        Content-Type:
+        - application/xml
+        Content-Length:
+        - '380'
+        Cache-Control:
+        - max-age=300
+        Expires:
+        - Tue, 04 Aug 2020 21:15:06 GMT
+        Access-Control-Allow-Origin:
+        - "*"
+        Access-Control-Allow-Headers:
+        - "*"
+      body:
+        encoding: UTF-8
+        string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><rxnormdata><relatedGroup><rxcui>855302</rxcui><termType>IN</termType><conceptGroup><tty>IN</tty><conceptProperties><rxcui>11289</rxcui><name>Medication
+          D-RX</name><synonym></synonym><tty>IN</tty><language>ENG</language><suppress>N</suppress><umlscui>C0043031</umlscui></conceptProperties></conceptGroup></relatedGroup></rxnormdata>
+      http_version: 
+    recorded_at: Fri, 26 Apr 2013 16:00:03 GMT
+  - request:
+      method: get
+      uri: https://rxnav.nlm.nih.gov/REST/rxcui/855302/property?propName=STRENGTH
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        Accept-Encoding:
+        - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+        - "*/*"
+        User-Agent:
+        - Ruby
+        Host:
+        - rxnav.nlm.nih.gov
+    response:
+      status:
+        code: 200
+        message: ''
+      headers:
+        Date:
+        - Tue, 04 Aug 2020 21:10:05 GMT
+        Server:
+        - Apache
+        Strict-Transport-Security:
+        - max-age=63072000; includeSubdomains; preload
+        Content-Type:
+        - application/xml
+        Content-Length:
+        - '99'
+        Cache-Control:
+        - max-age=300
+        Expires:
+        - Tue, 04 Aug 2020 21:15:06 GMT
+        Access-Control-Allow-Origin:
+        - "*"
+        Access-Control-Allow-Headers:
+        - "*"
+      body:
+        encoding: UTF-8
+        string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><rxnormdata><propConceptGroup/></rxnormdata>
+      http_version: 
+    recorded_at: Fri, 26 Apr 2013 16:00:03 GMT
+  - request:
+      method: get
+      uri: https://rxnav.nlm.nih.gov/REST/rxcui/855302/property?propName=AVAILABLE_STRENGTH
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        Accept-Encoding:
+        - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+        - "*/*"
+        User-Agent:
+        - Ruby
+        Host:
+        - rxnav.nlm.nih.gov
+    response:
+      status:
+        code: 200
+        message: ''
+      headers:
+        Date:
+        - Tue, 04 Aug 2020 21:10:05 GMT
+        Server:
+        - Apache
+        Strict-Transport-Security:
+        - max-age=63072000; includeSubdomains; preload
+        Content-Type:
+        - application/xml
+        Content-Length:
+        - '249'
+        Cache-Control:
+        - max-age=300
+        Expires:
+        - Tue, 04 Aug 2020 21:15:06 GMT
+        Access-Control-Allow-Origin:
+        - "*"
+        Access-Control-Allow-Headers:
+        - "*"
+      body:
+        encoding: UTF-8
+        string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><rxnormdata><propConceptGroup><propConcept><propCategory>ATTRIBUTES</propCategory><propName>AVAILABLE_STRENGTH</propName><propValue>2
+          MG</propValue></propConcept></propConceptGroup></rxnormdata>
+      http_version: 
+    recorded_at: Fri, 26 Apr 2013 16:00:03 GMT
+  - request:
+      method: get
+      uri: https://rxnav.nlm.nih.gov/REST/rxcui/855302/property?propName=QUANTITY
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        Accept-Encoding:
+        - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+        - "*/*"
+        User-Agent:
+        - Ruby
+        Host:
+        - rxnav.nlm.nih.gov
+    response:
+      status:
+        code: 200
+        message: ''
+      headers:
+        Date:
+        - Tue, 04 Aug 2020 21:10:05 GMT
+        Server:
+        - Apache
+        Strict-Transport-Security:
+        - max-age=63072000; includeSubdomains; preload
+        Content-Type:
+        - application/xml
+        Content-Length:
+        - '99'
+        Cache-Control:
+        - max-age=300
+        Expires:
+        - Tue, 04 Aug 2020 21:15:06 GMT
+        Access-Control-Allow-Origin:
+        - "*"
+        Access-Control-Allow-Headers:
+        - "*"
+      body:
+        encoding: UTF-8
+        string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><rxnormdata><propConceptGroup/></rxnormdata>
+      http_version: 
+    recorded_at: Fri, 26 Apr 2013 16:00:03 GMT
+  - request:
+      method: get
+      uri: https://rxnav.nlm.nih.gov/REST/rxcui/855302/property?propName=NUI
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        Accept-Encoding:
+        - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+        - "*/*"
+        User-Agent:
+        - Ruby
+        Host:
+        - rxnav.nlm.nih.gov
+    response:
+      status:
+        code: 200
+        message: ''
+      headers:
+        Date:
+        - Tue, 04 Aug 2020 21:10:05 GMT
+        Server:
+        - Apache
+        Strict-Transport-Security:
+        - max-age=63072000; includeSubdomains; preload
+        Content-Type:
+        - application/xml
+        Content-Length:
+        - '99'
+        Cache-Control:
+        - max-age=300
+        Expires:
+        - Tue, 04 Aug 2020 21:15:06 GMT
+        Access-Control-Allow-Origin:
+        - "*"
+        Access-Control-Allow-Headers:
+        - "*"
+      body:
+        encoding: UTF-8
+        string: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><rxnormdata><propConceptGroup/></rxnormdata>
+      http_version: 
+    recorded_at: Fri, 26 Apr 2013 16:00:03 GMT
+  recorded_with: VCR 3.0.3
+  

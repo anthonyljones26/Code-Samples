@@ -1,0 +1,23 @@
+default: &default
+  scheduling_url:
+    path: /pages/scheduling/guided
+    alias:
+  e_visit:
+    path: /pages/scheduling/guided
+    alias:
+
+  phone_numbers:
+    allergy_clinic: 573-817-3000
+    insurance_error: 1-888-443-8271
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+certification:
+  <<: *default
+
+production:
+  <<: *default

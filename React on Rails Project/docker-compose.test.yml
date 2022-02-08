@@ -1,0 +1,66 @@
+# docker-compose -f docker-compose.test.yml up test capybara
+version: '3'
+services:
+  test:
+    image: ti.portal-allergy_vials:${TAG-default}
+    command: bash -c "sleep 2 && rspec"
+    environment:
+      - APP_HOME=/portal-allergy_vials
+      - CAPYBARA_DRIVER=remote_chrome
+      - REDIS_HOST=redis
+      - SELENIUM_APP_HOST=https://tide.test:3000
+      - NODE_ENV=test
+    volumes:
+      - .:/portal-allergy_vials
+      - /portal-allergy_vials/config/env/tide
+      - node_modules_directory:/portal-allergy_vials/node_modules
+    ports:
+      - "3000"
+    depends_on:
+      - chrome
+      - firefox
+      - redis
+    networks:
+      selenium-grid:
+        aliases:
+          - tide.test
+  redis:
+    image: redis:3.2.12
+    ports:
+      - "6379"
+    networks:
+      - selenium-grid
+
+  hub:
+    image: selenium/hub
+    ports:
+      - "4444"
+    networks:
+      - selenium-grid
+
+  chrome:
+    image: selenium/node-chrome
+    depends_on:
+      - hub
+    environment:
+      - HUB_PORT_4444_TCP_ADDR=hub
+      - HUB_PORT_4444_TCP_PORT=4444
+    networks:
+      - selenium-grid
+
+  firefox:
+    image: selenium/node-firefox
+    depends_on:
+      - hub
+    environment:
+      - HUB_PORT_4444_TCP_ADDR=hub
+      - HUB_PORT_4444_TCP_PORT=4444
+    networks:
+      - selenium-grid
+
+networks:
+  selenium-grid:
+
+volumes:
+  node_modules_directory:
+    driver: local

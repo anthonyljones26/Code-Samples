@@ -1,0 +1,34 @@
+// override terra theme variables here
+//  - currently no overrides
+
+// colors
+$light-gray: #bcbfc0;
+$dark-gray: #515659;
+$lighter-gray: #eee;
+$medium-gray: #888;
+$gray: #9b9b9b;
+$gray30: #bcbfc0;
+$white: #fff;
+$black: #000;
+$invisible: rgba(0, 0, 0, 0);
+$light-mint: #70c4b4;
+$dark-mint: #0f735e;
+$light-cocoa: #d6b66a;
+$dark-cocoa: #944e15;
+
+// preloader colors
+$loader-inactive: #ccc;
+$loader-motion-secondary: #b2b2b2;
+$loader-motion-primary: #999;
+$loader-active: #7f7f7f;
+
+// blood pressure colors
+$systolic-light: $light-mint;
+$systolic-dark: $dark-mint;
+$diastolic-light: $light-cocoa;
+$diastolic-dark: $dark-cocoa;
+
+// medication timeline colors
+$med-bar-fill: #999;
+$med-bar-stroke: $black;
+$med-bar-label-fill: $black;
